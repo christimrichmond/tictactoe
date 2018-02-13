@@ -13,12 +13,14 @@
   background-color: #2196F3;
   padding: 20px;
 }
+
 .grid-container > div {
   background-color: #c1d9ff;
   text-align: center;
   padding: 40px 0;
   font-size: 30px;
 }
+
 .button {
     background-color: #c1d9ff;
     border: 0;
@@ -28,27 +30,57 @@
     text-decoration: none;
     display: inline-block;
     font-size: 50px;
+    cursor: pointer;
+    
 }
 
+.active, .button:hover {
+	background-color: red;
+	color: white;
+}
 
 </style>
 </head>
+
 <body>
+
+	<!-- Audio is tacky, I know. However, it's about all I could get to work on this project, so... -->
+<audio controls autoplay style="display:none">
+  <source src="Shall-we-play-a-game.mp3" type="audio/mpeg">
+</audio>
 
 <center>
 	<h1>Tic Tac Toe (aka Noughts & Crosses)</h1>
-</center>
 
-<div class="grid-container">
-  <div><input type="button" class="button" value="X"></div>
-  <div><input type="button" class="button" value="X"></div>
-  <div><input type="button" class="button" value="X"></div>
-  <div><input type="button" class="button" value="X"></div>
-  <div><input type="button" class="button" value="X"></div>
-  <div><input type="button" class="button" value="X"></div>
-  <div><input type="button" class="button" value="X"></div>
-  <div><input type="button" class="button" value="X"></div>
-  <div><input type="button" class="button" value="X"></div>
+<i>Click in a box to make your move.</i><br><br>
+
+
+
+
+<!-- <p id="x" onclick="myFunction()">" "</p>
+
+<script>
+function myFunction() {
+    document.getElementById("x").innerHTML = "X";
+}
+</script> -->
+
+
+
+
+
+<div class="grid-container"> 
+  <div><input type="button" class="button" value="a1"></div>
+  <div><input type="button" class="button" value="a2"></div>
+  <div><input type="button" class="button" value="a3"></div>
+  <div><input type="button" class="button" value="b4"></div>
+  <div><input type="button" class="button" value="b5"></div>
+  <div><input type="button" class="button" value="b6"></div>
+  <div><input type="button" class="button" value="c7"></div>
+  <div><input type="button" class="button" value="c8"></div>
+  <div><input type="button" class="button" value="c9"></div>
 </div>
-
+</center>
+</body>
+</html>
 
