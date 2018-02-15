@@ -22,93 +22,157 @@
   font-size: 30px;
 }
 
-.buttonSubmit
-{
-  display: none;
+.button {
+    background-color: #c1d9ff;
+    border: 0;
+    color: red;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+    
 }
 
+.buttonSubmit {
+	display: none;
+}
+
+.active, .button:hover {
+	background-color: red;
+	color: white;
+}
 
 </style>
 </head>
 
 <body>
-
-  <!-- Audio is tacky, I know. However, it's about all I could get to work on this project, so... -->
-<!-- <audio onclick="playedOnce()" controls autoplay style="display:none">
-  <source src="Shall-we-play-a-game.mp3" type="audio/mpeg">
-</audio> --> 
+<br>
 
 <center>
-  <h1>Tic Tac Toe (aka Noughts & Crosses)</h1>
 
-<i>Type an X or O in a box to make your move.</i>
-<br><br>
-
-<div class="grid-container"> 
+<h1>Tic Tac Toe (aka Noughts & Crosses)</h1>
+<i><%= $result %></i>
+<br>
+<br>
+<div class="grid-container">
   <div>
+<% if a1 == "X" %>
+X
+<% elsif a1 == "O" %>
+O
+<% else %>
     <form method="post" action="board">
     <input type="text" name="a1" style="text-align:center;" size="1">
     <input type="hidden" name="a1">
-    <input type="submit" value=" " class="buttonSubmit">
+    <input type="submit" class="buttonSubmit">
+<% end %>
   </div>
 
   <div>
+<% if a2 == "X" %>
+X
+<% elsif a2 == "O" %>
+O
+<% else %>
     <form method="post" action="board">
     <input type="text" name="a2" style="text-align:center;" size="1">
     <input type="hidden" name="a2">
     <input type="submit" class="buttonSubmit">
+<% end %>
   </div>
 
   <div>
+<% if a3 == "X" %>
+X
+<% elsif a3 == "O" %>
+O
+<% else %>
     <form method="post" action="board">
     <input type="text" name="a3" style="text-align:center;" size="1">
     <input type="hidden" name="a3">
     <input type="submit" class="buttonSubmit">
+<% end %>
   </div>
 
   <div>
+<% if b4 == "X" %>
+X
+<% elsif b4 == "O" %>
+O
+<% else %>
     <form method="post" action="board">
     <input type="text" name="b4" style="text-align:center;" size="1">
     <input type="hidden" name="b4">
     <input type="submit" class="buttonSubmit">
+<% end %>
   </div>
 
   <div>
+<% if b5 == "X" %>
+X
+<% elsif b5 == "O" %>
+O
+<% else %>
     <form method="post" action="board">
     <input type="text" name="b5" style="text-align:center;" size="1">
     <input type="hidden" name="b5">
     <input type="submit" class="buttonSubmit">
+<% end %>
   </div>
 
   <div>
+<% if b6 == "X" %>
+X
+<% elsif b6 == "O" %>
+O
+<% else %>
     <form method="post" action="board">
     <input type="text" name="b6" style="text-align:center;" size="1">
     <input type="hidden" name="b6">
     <input type="submit" class="buttonSubmit">
+<% end %>
   </div>
   
   <div>
+<% if c7 == "X" %>
+X
+<% elsif c7 == "O" %>
+O
+<% else %>
     <form method="post" action="board">
     <input type="text" name="c7" style="text-align:center;" size="1">
     <input type="hidden" name="c7">
     <input type="submit" class="buttonSubmit">
+<% end %>
   </div>
 
   <div>
+<% if c8 == "X" %>
+X
+<% elsif c8 == "O" %>
+O
+<% else %>
     <form method="post" action="board">
     <input type="text" name="c8" style="text-align:center;" size="1">
     <input type="hidden" name="c8">
     <input type="submit" class="buttonSubmit">
+<% end %>
   </div>
 
   <div>
+<% if c9 == "X" %>
+X
+<% elsif c9 == "O" %>
+O
+<% else %>
     <form method="post" action="board">
     <input type="text" name="c9" style="text-align:center;" size="1">
     <input type="hidden" name="c9">
     <input type="submit" class="buttonSubmit">
-  </div>
-
-  <input type="submit" class="buttonSubmit">
+<% end %>
+</div>
 </div>
 </form>
 </center>

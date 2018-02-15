@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>Tic Tac Toe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  align-content: center;
+  grid-gap: 20px;
+  background-color: #2196F3;
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: #c1d9ff;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 30px;
+}
+
+.button {
+    background-color: #c1d9ff;
+    border: 0;
+    color: red;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+    
+}
+
+.buttonSubmit {
+	display: none;
+}
+
+.active, .button:hover {
+	background-color: red;
+	color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+	<!-- Audio is tacky, I know. However, it's about all I could get to work on this project, so... -->
+<!-- <audio onclick="playedOnce()" controls autoplay style="display:none">
+  <source src="Shall-we-play-a-game.mp3" type="audio/mpeg">
+</audio> --> 
+
+<center>
+	<h1>Tic Tac Toe (aka Noughts & Crosses)</h1>
+
+<i>Click in a box to make your move.</i><br><br>
+
+<form method="post" action="play">
+<div class="grid-container"> 
+  <div>
+  	<input type="hidden" value="X" name="a1">
+  	<input type="button" class="button" name="a1">
+  </div>
+  <div>
+  	<input type="hidden" value="X" name="a2">
+  	<input type="button" class="button" name="a2">
+  </div>
+  <div>
+  	<input type="hidden" value="X" name="a3">
+  	<input type="button" class="button" name="a3">
+  </div>
+  <div>
+  	<input type="hidden" value="X" name="b4">
+  	<input type="button" class="button" name="b4">
+  </div>
+  <div>
+  	<input type="hidden" value="X" name="b5">
+  	<input type="button" class="button" name="b5">
+  </div>
+  <div>
+  	<input type="hidden" value="X" name="b6">
+  	<input type="button" class="button" name="b6">
+  </div>
+  <div>
+  	<input type="hidden" value="X" name="c7">
+  	<input type="button" class="button" name="c7">
+  </div>
+  <div>
+  	<input type="hidden" value="X" name="c8">
+  	<input type="button" class="button" name="c8">
+  </div>
+  <div>
+  	<input type="hidden" value="X" name="c9">
+  	<input type="button" class="button" name="c9">
+  </div>
+  <input type="submit" value=" " class="buttonSubmit">
+</div>
+</form>
+</center>
+</body>
+</html>
+
