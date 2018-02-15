@@ -1,3 +1,6 @@
+    # This is old version...do not use!
+
+
     class Players
     	def x_player
     		@x = "X"
