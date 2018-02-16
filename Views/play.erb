@@ -53,128 +53,59 @@
 <center>
 
 <h1>Tic Tac Toe (aka Noughts & Crosses)</h1>
-<i><%= $result %></i>
+<i>
+	<%= winner_result %>
+</i>
 <br>
 <br>
 <div class="grid-container">
   <div>
-<% if a1 == "X" %>
-X
-<% elsif a1 == "O" %>
-O
-<% else %>
     <form method="post" action="board">
-    <input type="text" name="a1" style="text-align:center;" size="1">
-    <input type="hidden" name="a1">
-    <input type="submit" class="buttonSubmit">
-<% end %>
+    <input type="text" name="a1" style="text-align:center;"  size="1" value= <%= a1 %>>
   </div>
 
   <div>
-<% if a2 == "X" %>
-X
-<% elsif a2 == "O" %>
-O
-<% else %>
     <form method="post" action="board">
-    <input type="text" name="a2" style="text-align:center;" size="1">
-    <input type="hidden" name="a2">
-    <input type="submit" class="buttonSubmit">
-<% end %>
+    <input type="text" name="a2" style="text-align:center;"  size="1" value= <%= a2 %>>
   </div>
 
   <div>
-<% if a3 == "X" %>
-X
-<% elsif a3 == "O" %>
-O
-<% else %>
     <form method="post" action="board">
-    <input type="text" name="a3" style="text-align:center;" size="1">
-    <input type="hidden" name="a3">
-    <input type="submit" class="buttonSubmit">
-<% end %>
+    <input type="text" name="a3" style="text-align:center;"  size="1" value= <%= a3 %>>
   </div>
 
   <div>
-<% if b4 == "X" %>
-X
-<% elsif b4 == "O" %>
-O
-<% else %>
     <form method="post" action="board">
-    <input type="text" name="b4" style="text-align:center;" size="1">
-    <input type="hidden" name="b4">
-    <input type="submit" class="buttonSubmit">
-<% end %>
+    <input type="text" name="b4" style="text-align:center;"  size="1" value= <%= b4 %>>
   </div>
 
   <div>
-<% if b5 == "X" %>
-X
-<% elsif b5 == "O" %>
-O
-<% else %>
     <form method="post" action="board">
-    <input type="text" name="b5" style="text-align:center;" size="1">
-    <input type="hidden" name="b5">
-    <input type="submit" class="buttonSubmit">
-<% end %>
+    <input type="text" name="b5" style="text-align:center;"  size="1" value= <%= b5 %>>
   </div>
 
   <div>
-<% if b6 == "X" %>
-X
-<% elsif b6 == "O" %>
-O
-<% else %>
     <form method="post" action="board">
-    <input type="text" name="b6" style="text-align:center;" size="1">
-    <input type="hidden" name="b6">
-    <input type="submit" class="buttonSubmit">
-<% end %>
+    <input type="text" name="b6" style="text-align:center;"  size="1" value= <%= b6 %>>
   </div>
   
   <div>
-<% if c7 == "X" %>
-X
-<% elsif c7 == "O" %>
-O
-<% else %>
     <form method="post" action="board">
-    <input type="text" name="c7" style="text-align:center;" size="1">
-    <input type="hidden" name="c7">
-    <input type="submit" class="buttonSubmit">
-<% end %>
+    <input type="text" name="c7" style="text-align:center;"  size="1" value= <%= c7 %>>
   </div>
 
   <div>
-<% if c8 == "X" %>
-X
-<% elsif c8 == "O" %>
-O
-<% else %>
     <form method="post" action="board">
-    <input type="text" name="c8" style="text-align:center;" size="1">
-    <input type="hidden" name="c8">
-    <input type="submit" class="buttonSubmit">
-<% end %>
+    <input type="text" name="c8" style="text-align:center;"  size="1" value= <%= c8 %>>
   </div>
 
   <div>
-<% if c9 == "X" %>
-X
-<% elsif c9 == "O" %>
-O
-<% else %>
     <form method="post" action="board">
-    <input type="text" name="c9" style="text-align:center;" size="1">
-    <input type="hidden" name="c9">
+    <input type="text" name="c9" style="text-align:center;"  size="1" value= <%= c9 %>>
+   </div> 
     <input type="submit" class="buttonSubmit">
-<% end %>
-</div>
-</div>
 </form>
+</div>
 </center>
 </body>
 </html>

@@ -2,6 +2,7 @@ require "sinatra"
 require_relative "tictactoe.rb"
 
 get '/' do
+	winner_result = " "
 	erb :home
 end
 
@@ -20,6 +21,7 @@ post '/board' do
 end
 
 get '/play' do
+	winner_result = " "
 	a1 = params[:a1]
 	a2 = params[:a2]
 	a3 = params[:a3]
@@ -29,7 +31,7 @@ get '/play' do
 	c7 = params[:c7]
 	c8 = params[:c8]
 	c9 = params[:c9]
-	#winner_result = winner(a1, a2, a3, b4, b5, b6., c7, c8, c9)
-
-	erb :play, :locals => {:a1 => a1, :a2 => a2, :a3 => a3, :b4 => b4, :b5 => b5, :b6 => b6, :c7 => c7, :c8 => c8, :c9 => c9,}
+	print a1, a2, a3, b4, b5, b6, c7, c8, c9
+	winner_result = winner(a1.upcase, a2.upcase, a3.upcase, b4.upcase, b5.upcase, b6.upcase, c7.upcase, c8.upcase, c9.upcase)
+	erb :play, :locals => {:a1 => a1, :a2 => a2, :a3 => a3, :b4 => b4, :b5 => b5, :b6 => b6, :c7 => c7, :c8 => c8, :c9 => c9, :winner_result => winner_result}
 end
