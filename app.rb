@@ -16,7 +16,7 @@ post '/board' do
 	a7 = params[:a7]
 	a8 = params[:a8]
 	a9 = params[:a9]
-	puts a1, a2, a3, a4, a5, a6, a7, a8, a9
+	# puts a1, a2, a3, a4, a5, a6, a7, a8, a9
 	redirect '/play?a1=' + a1.upcase + '&a2=' + a2.upcase + '&a3=' + a3.upcase + '&a4=' + a4.upcase + '&a5=' + a5.upcase + '&a6=' + a6.upcase + '&a7=' + a7.upcase + '&a8=' + a8.upcase + '&a9=' + a9.upcase
 end
 
@@ -96,7 +96,7 @@ get '/play' do
 		else a9 = "X"
 	end
 
-	print a1, a2, a3, a4, a5, a6, a7, a8, a9
+	# print a1, a2, a3, a4, a5, a6, a7, a8, a9
 
 	computer = board(a1, a2, a3, a4, a5, a6, a7, a8, a9)
 

@@ -14,7 +14,7 @@ end
 	a = "a"
 	out = a<<random_remaining_moves
 	return out
-	puts out
+	# puts out
 	end
 
 
