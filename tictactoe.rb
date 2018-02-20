@@ -1,26 +1,9 @@
-def players(player)
-    if player1 = X
-      return X
-    elsif player2 = O
-      return O
-    end
-
-    if a1 == "X"
-			a1 = "X"
-		elsif a1 == "O"
-			a1 = "O"
-		elsif a1 == ""
-			a1 = ""
-		else a1 = ""
-	end
-end	
-
 def board(a1, a2, a3, a4, a5, a6, a7, a8, a9)
-	# board_hash = {a1 => 1, a2 => 2, a3 => 3, a4 => 4, a5 => 5, a6 => 6, a7 => 7, a8 => 8, a9 => 9}
+	board_hash = {1 => a1, 2 => a2, 3 => a3, 4 => a4, 5 => a5, 6 => a6, 7 => a7, 8 => a8, 9 => a9}
 	 blank_board = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 	 completed_moves = []
 	 (1..9).each do |i|
-	 	if blank_board[i] != " "
+	 	if board_hash[i] != ""
 	 		completed_moves.push(i)
 	 	end
 end
